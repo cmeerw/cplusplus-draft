@@ -446,7 +446,7 @@ requirements, respectively\iref{iterator.requirements}.
 A template parameter with name
 \tcode{C}
 represents the set
-of types containing \tcode{char}, \tcode{wchar_t}, and any other
+of types containing \tcode{char}, \keyword{wchar_t}, and any other
 \impldef{set of character types that iostreams templates can be instantiated for}
 character types that meet
 the requirements for a character on which any of the iostream
@@ -3327,7 +3327,7 @@ In the base class implementation these names are
 namespace std {
   template<class charT>
     class numpunct_byname : public numpunct<charT> {
-    // this class is specialized for \tcode{char} and \tcode{wchar_t}.
+    // this class is specialized for \tcode{char} and \keyword{wchar_t}.
     public:
       using char_type   = charT;
       using string_type = basic_string<charT>;
